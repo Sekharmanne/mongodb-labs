@@ -1,3 +1,14 @@
+
+## Use Spring Initizr to create a new project
+
+I have included a sample project output from Spring initialzr in this folder. However, it would be good to create your own.  You can do this in one of three ways:
+
+ * From the Spring CLI utility
+ * From STS or another IDE
+ * From the web based Spring initializr at [start.spring.io](http://start.spring.io/)
+
+You can call the group id `com.example` and the artifact id `accessing-data-mongdb`.  You will need just one optional dependency which is Spring Data MongoDB.
+
 ## Create a new entity
 
 In your IDE, add a new java class called Customer.  Put in a file called `Customer.java`.
