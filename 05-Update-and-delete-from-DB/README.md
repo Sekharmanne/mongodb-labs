@@ -26,7 +26,6 @@ And 2 unary operations ++,--
 And 2 like unary operations – unary + and –(they like binary, but add and subtract number with oneself.
  2 memory methods – get and save.
 
-
 **Step 2 :** Now look at last homework that we have. For this time we mast already have method get()from DB value that we save with save method.
 
 ![](../images/update-from-db-3.png)
@@ -38,7 +37,6 @@ And here is explanation of get() method:
 Here we simply get value with _idkey from dbvalue. But what we get if we start program and want to call method get()at first? We get TypeError, because we try to get from None object value withkey value.
 
 ![](../images/update-from-db-5.png)
-
 
 **Step 3 :** Now we rewrite function get() to right way. We can’t create hard logic to see if there is an object with _id that we want and if that object have value. Or simply check – if our search return not None object.
 
@@ -92,9 +90,9 @@ d)	And in our logic operations (binary).
 
 e)	And unary
 
-![](../images/7update-from-db-17.png)
+![](../images/update-from-db-17.png)
 
-![](../images/7update-from-db-18.png)
+![](../images/update-from-db-18.png)
 
 
 **Step 3** Now update our function journaling()to save our curr_journal.
