@@ -19,7 +19,6 @@ Estimated Completion Time: 46 minutes
 
 ![](../images/update-from-db-2.png)
 
-
 **Step 1 :** Open our last project – calulatop.py in IDE that you love. The good idea is look through the code we have. What functionality we have? What we need to do one more? 
 We have 4 binary operations - *,/,+,-
 And 2 unary operations ++,--
@@ -93,7 +92,6 @@ e)	And unary
 ![](../images/update-from-db-17.png)
 
 ![](../images/update-from-db-18.png)
-
 
 **Step 3** Now update our function journaling()to save our curr_journal.
 
