@@ -386,7 +386,6 @@ db.create_collection(name ="log", capped =True,max=5, size =524288000)
 ``
 for i in xrange(100):
   db.log.insert({"Event": "Added number " + str(i)})
-
 ``
 
 **Step 3.** And print all of them:
