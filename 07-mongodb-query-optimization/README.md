@@ -120,7 +120,7 @@ Result:
 Result time: 0, scanned: 48, read full documents :0 cursor type: BtreeCursor a_1, index only: True
 ``
 
-Step 4. Indexing takes a lot of advantages in sorting:
+**Step 4.**  Indexing takes a lot of advantages in sorting:
 
 a)	Sorting by unindexed field. To sort collection, you must specify “sort” parameter as a list of (key, direction) pairs
 
@@ -150,7 +150,7 @@ Result time: 54, scanned: 50000, read full documents :50000 cursor type: BtreeCu
 
 Almost fivefold increase in the rate
 
-Step 5. It's time to test “find” and “sort” together:
+**Step 5.**  It's time to test “find” and “sort” together:
 
 a)	Fields in query are both not indexed.
 
@@ -208,7 +208,6 @@ e)	Query again and see the difference in time:(pls check thereare 2images)
 ``
 res = db.index_test.find(sort =[("a", ASCENDING),("b", ASCENDING)]).explain()
 print_query_info(res)
-
 ``
 
 Result:
