@@ -24,7 +24,7 @@ For example, any text data are contained by mongodb as string. Sometimes it is n
 
 a)	Firstly, let's create custom data class:
 
-``
+``python
 class CompressedText():
 	def __init__(self, text):
 		self.__text = text
@@ -42,7 +42,7 @@ Task completed.
 
 a)	First one function converts text data to the BSON "BinData" datatype. Before converting we compress it using zlib compression library from GNU.
 
-``
+``python
 def to_binary(custom):
   compressed =zlib.compress(custom.text())
 ``
