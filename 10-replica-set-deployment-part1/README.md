@@ -92,14 +92,13 @@ Picture 10.1.1Replication web interface
 
 There is ability to view replica set config, get replica set status, see docs and other.
 
-**Step 6.**  Read and write to replica set.
+![](../images/replica-set-deployment-15.png)
+
+**Step 5.**  Read and write to replica set.
 
 a)	Launch new console and connect to the secondary port (27018 or 27019)
 
-![](../images/replica-set-deployment-15.png)
-
 The output string tells us that we are connected to secondary member.
-
 
 ![](../images/replica-set-deployment-16.png) main image
 
