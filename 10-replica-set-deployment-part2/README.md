@@ -43,11 +43,11 @@ a)	output book collection from the previous lab:
 
 b)	And try to save some book:
 
-![](../images/working-with-pymango-7.png)
+![](../images/working-with-pymango-8.png)
  
 c)	Open new mongo console, and verify that the new book was saved successfully.
 
-![](../images/working-with-pymango-8.png)
+![](../images/working-with-pymango-7.png)
 
 ![](../images/working-with-pymango-9.png) 
 
@@ -61,7 +61,7 @@ b)	You can change read preference. It means that you recommend pymongo some repl
 
 ![](../images/working-with-pymango-11.png)
 
-![](../images/working-with-pymango-12.png) main oage
+![](../images/working-with-pymango-12.png) 
 
 **Step 4.** One of the pymongo features is the selecting member according to tags.
 
@@ -79,23 +79,24 @@ c)	And test the connection:
 
 ![](../images/working-with-pymango-15.png)
 
-![](../images/working-with-pymango-16.png) 
 
 **Step 5.** If something bad has occurred with primary member, pymongo automatically reconnects to the new primary member
 
 a)	Reconnect to the replica set with the simple connection and check out connection port:
 
-![](../images/working-with-pymango-17.png)
+![](../images/working-with-pymango-16.png)
 
-![](../images/working-with-pymango-18.png)
+![](../images/working-with-pymango-17.png)
 
 If the combination “<Ctrl>+<C>” is pressed in our mongod instance with primary member, the process ends. So that, switch to the console with primary member and press “<Ctrl>+<C>”.
 
 b)	When we will try to read something, an exception will be thrown.
 
-![](../images/working-with-pymango-19.png)
+![](../images/working-with-pymango-18.png)
 
 On subsequent attempts to run the query we might continue to see this exception. 
+
+![](../images/working-with-pymango-19.png)
 
 c)	Eventually, replica set will elect a new primary
 
