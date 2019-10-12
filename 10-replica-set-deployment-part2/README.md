@@ -47,9 +47,9 @@ b)	And try to save some book:
  
 c)	Open new mongo console, and verify that the new book was saved successfully.
 
-![](../images/working-with-pymango-7.png)
-
 ![](../images/working-with-pymango-9.png) 
+
+![](../images/working-with-pymango-7.png)
 
 **Step 3.** Instead of a simple MongoClient you can use MongoReplicaSetClient. It offers two key features: secondary reads and replica set health monitoring. 
 
