@@ -72,9 +72,11 @@ d)	And look at the status again:
 
 ![](../images/replica-set-deployment-11.png)
 
+![](../images/replica-set-deployment-12.png) 
+
 We have one primary and two secondary members.
 
-**Step 5.**  Replication web interface. As we have used –rest option at the launch of replica set members, mongodb provides web interface to our replica set.
+**Step 4.**  Replication web interface. As we have used –rest option at the launch of replica set members, mongodb provides web interface to our replica set.
 
 The following URL should be entered to the browser address bar: 
 http://<machine-name>:<port>/_replSet 
@@ -83,9 +85,9 @@ Our url seems like:
 http://localhost:28017/_replSet
 Port 28017 is used by default.
 
-![](../images/replica-set-deployment-12.png) main page
+![](../images/replica-set-deployment-13.png) 
 
-![](../images/replica-set-deployment-13.png)
+![](../images/replica-set-deployment-14.png)
 Picture 10.1.1Replication web interface
 
 There is ability to view replica set config, get replica set status, see docs and other.
@@ -94,28 +96,28 @@ There is ability to view replica set config, get replica set status, see docs an
 
 a)	Launch new console and connect to the secondary port (27018 or 27019)
 
-![](../images/replica-set-deployment-14.png)
+![](../images/replica-set-deployment-15.png)
 
 The output string tells us that we are connected to secondary member.
 
 
-![](../images/replica-set-deployment-15.png) main image
+![](../images/replica-set-deployment-16.png) main image
 
 b)	Switch to the console with primary member and save documents:
 
-![](../images/replica-set-deployment-16.png)
+![](../images/replica-set-deployment-17.png)
 
 **Step 6.**  Now, let’s try to get these books from the secondary member.
 
 a)	Firstly the following command should be executed:
 
-![](../images/replica-set-deployment-17.png)
+![](../images/replica-set-deployment-18.png)
 
 By default, the reading from secondary members is prohibited. This is to protect you from performing eventually consistent reads by accident. The command above permits the reading 
 
 b)	Find all books
 
-![](../images/replica-set-deployment-18.png)
+![](../images/replica-set-deployment-19.png)
 
 Replica set work correctly.
 
