@@ -134,7 +134,7 @@ As you can see, balancer splits chunks equally between two shards. The lowest li
 
 **Task completed.**
 
-![](../images/sharded-cluster-21.png) main image
+![](../images/sharded-cluster-21.png) 
 
 **Step 1.**  Connecting to the sharded cluster
 
@@ -271,6 +271,7 @@ class AddressBook(object):
 def__init__(self, client, db_name ="test", collection_name ="Addr_book"):
 self.address_book= client[db_name][collection_name]
 ``
+
 self.address_book contains reference to the collection.
 
 First Method inserts new contacts to address book:
@@ -286,6 +287,7 @@ except errors.PyMongoError:
 #Application does not interrupted but only prints connecting error message
 print("Connection or writing error")
 ``
+
 **Step 8.**  The method above tries to insert new document to the collection, using ‘self.address_book’ reference. If an exception occurred, it prints an error message.
 
 The next method removes unnecessary contacts:
@@ -300,6 +302,7 @@ print("Removed {} objects".format(result.get('n',0)))
 except errors.PyMongoError:
 print("Connection error")
 ``
+
 The purpose of the method above is to remove documents coinciding with passed document. Method, also, result of removing.
 
 Last method return document with contact information to user:
